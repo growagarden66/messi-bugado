@@ -1,71 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Messi bugado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messi Bugado</title>
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at center, #101010, #000);
-      color: #fff;
-      min-height: 100vh;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      min-height: 100vh;
       margin: 0;
-    }
-
-    .container {
+      padding: 20px;
       text-align: center;
     }
 
-    button {
-      background-color: #1e90ff;
-      border: none;
-      color: white;
-      padding: 15px 25px;
-      font-size: 22px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    button:hover {
-      background-color: #3ea6ff;
-      transform: scale(1.05);
-    }
-
     img {
-      display: none;
-      margin-top: 30px;
+      width: 300px;
       max-width: 90%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 30px rgba(0, 150, 255, 0.4);
+      border-radius: 15px;
+      box-shadow: 0 0 25px #0ff;
+      margin-bottom: 20px;
     }
 
-    .show {
-      display: block;
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 6px 0;
+    }
+
+    .shine {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
     }
   </style>
 </head>
 <body>
-
-  <div class="container">
-    <button id="botao">Messi bugado</button>
-    <br>
-    <img id="imagem" src="messi-bugado.png" alt="Messi bugado">
-  </div>
-
-  <script>
-    const botao = document.getElementById('botao');
-    const imagem = document.getElementById('imagem');
-
-    botao.addEventListener('click', () => {
-      imagem.classList.toggle('show');
-    });
-  </script>
-
+  <img src="messi-bugado.png" alt="Messi Bugado">
+  <h1 class="shine">Messi Bugado</h1>
+  <p>1992</p>
+  <p>Wiiw</p>
+  <p>Woow</p>
+  <p>Wwii</p>
 </body>
 </html>
